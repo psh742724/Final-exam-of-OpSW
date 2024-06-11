@@ -8,16 +8,16 @@
 echo "First off, do you have echo in your path? (1=yes, 2=no) "
 read answer
 while ! validint $answer 1 2 ; do
-  echo "Try again. Do you have echon "
+  echo "Try again. Do you have echo "
   echo "in your path? (1=yes, 2=no) "
   read answer
 done
 
 # 2. checkForCmdInPath 작동 확인
-if ! checkForCmdInPath "echon" ; then
+if ! checkForCmdInPath "echo" ; then
   echo "Nope, can't find the echo command."
 else
-  echo "The echon command is in the PATH."
+  echo "The echo command is in the PATH."
 fi
 
 echo ""
